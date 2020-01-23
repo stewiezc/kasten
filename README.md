@@ -5,6 +5,10 @@ kasten temp
 
 `docker build -t init-k10:local .`
 
+## Digital Ocean setup
+
+export DIGITALOCEAN_ACCESS_TOKEN=<your token>
+
 ## Run init
 
 `docker run -e DIGITALOCEAN_ACCESS_TOKEN=$DIGITALOCEAN_ACCESS_TOKEN init-k10:local init_k10`
