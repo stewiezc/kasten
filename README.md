@@ -17,11 +17,12 @@ kasten temp
 
 `docker run -it --rm --entrypoint /bin/bash -e DIGITALOCEAN_ACCESS_TOKEN=$DIGITALOCEAN_ACCESS_TOKEN init-k10:local`
 
-then run docker-entrypoint.sh
+then run `docker-entrypoint.sh`
 
 ## Run reset
 
 deleting namespaces caused the api-resources to throw errors (kubectl api-resources)
-kubectl delete apiservice v1alpha1.actions.kio.kasten.io and 2 others
+
+fixed with `kubectl delete apiservice v1alpha1.actions.kio.kasten.io`
 
 `docker run -e DIGITALOCEAN_ACCESS_TOKEN=$DIGITALOCEAN_ACCESS_TOKEN init-k10:local reset_k10`
