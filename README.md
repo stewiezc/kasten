@@ -7,7 +7,7 @@ kasten temp
 
 ## Digital Ocean setup
 
-export DIGITALOCEAN_ACCESS_TOKEN=<your token>
+`export DIGITALOCEAN_ACCESS_TOKEN=<your token>`
 
 ## Run init
 
