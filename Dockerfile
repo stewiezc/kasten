@@ -15,5 +15,6 @@ RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s 
 COPY docker-entrypoint.sh /usr/local/bin/
 COPY init_k10 /usr/local/bin/
 COPY reset_k10 /usr/local/bin/
+COPY mysql-backup-policy.yaml /
 
 ENTRYPOINT ["docker-entrypoint.sh"]
