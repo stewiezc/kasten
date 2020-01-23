@@ -2,6 +2,6 @@
 
 echo "resetting cluster..."
 echo "deleting kasten-io namespace"
-kubectl delete namespace kasten-io
+#kubectl delete namespace kasten-io
 echo "deleting zac-stewart namespace"
-kubectl delete namespace zac-stewart
+#kubectl delete namespace zac-stewart
